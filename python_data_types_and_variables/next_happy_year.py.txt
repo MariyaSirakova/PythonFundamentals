@@ -1,0 +1,9 @@
+curr_year = int(input())
+
+while True:
+    curr_year += 1
+    curr_year_str = str(curr_year)
+    if len(set(curr_year_str)) == len(curr_year_str):
+        break
+
+print(curr_year)
