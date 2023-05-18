@@ -1,0 +1,14 @@
+first_line = input()
+second_line = input()
+last_printed_line = first_line
+
+for char_index in range(len(first_line)):
+    left_part = second_line[ : char_index + 1]
+    right_part = first_line [char_index + 1 :]
+    new_line = left_part + right_part
+
+    if new_line == last_printed_line:
+        continue
+
+    print(new_line)
+    last_printed_line = new_line
