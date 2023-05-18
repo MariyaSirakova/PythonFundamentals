@@ -1,0 +1,13 @@
+send_messages = int(input())
+message = ''
+for i in range(send_messages):
+    curr_num = int(input())
+
+    if curr_num == 88:
+        message = 'Hello'
+    elif curr_num == 86:
+        message = 'How are you?'
+    elif curr_num < 88:
+        message = 'GREAT!'
+    else:
+        message = 'Bye.'
