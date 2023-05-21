@@ -1,0 +1,8 @@
+key = int(input())
+number_of_line = int(input())
+current_letter = ''
+
+for char in range(number_of_line):
+    current_character = input()
+    current_letter = key + ord(current_character)
+    print(chr(current_letter), end = '')
